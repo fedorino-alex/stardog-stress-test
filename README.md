@@ -14,7 +14,7 @@ docker build -t stress-test .
 docker run -it -v <folder-with-tpls>:/data stress-test
 ```
 
-## Usage
+## Parameters
 
 By default, using next parameters:
 - --db_name: name of database; 
