@@ -8,7 +8,7 @@ import click
 from insert_to_graph import insert_to_stardog, __get_conn_details, check_database
 
 @click.command()
-@click.option('--db_name', default="stress-test", help='Database name into StarDog')
+@click.option('--db_name', prompt='Database name into StarDog', default="stress-test", help='Database name into StarDog')
 @click.option('--path', default="/data", prompt='Path to directory with ttl decomposed files', help='Path to directory with ttl decomposed files')
 @click.option('--count', default=500, prompt='Count of documents to insert into StarDog', help='Count of documents to insert into StarDog. To load all documents, use count=0')
 @click.option('--workers', default=10, prompt='Number of cpus to process', help='Number of cpus to process')
