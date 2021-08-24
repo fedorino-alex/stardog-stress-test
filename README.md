@@ -8,4 +8,4 @@ Small project for demonstrating how to ingest data into StarDog graph database.
 
 ## Run container
 
-`docker run -it -v <folder-with-tpls>:/data stress-test stress-test`
+`docker run -it -v <folder-with-tpls>:/data stress-test`
