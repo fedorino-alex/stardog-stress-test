@@ -2,4 +2,10 @@
 
 Small project for demonstrating how to ingest data into StarDog graph database.
 
-Mount volume to `/data` with `.tpl` files
+## Building image 
+
+`docker build . -t stress-test`
+
+## Run container
+
+`docker run -it -v <folder-with-tpls>:/data stress-test stress-test`
